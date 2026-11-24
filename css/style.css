@@ -1,0 +1,711 @@
+/* Configurações gerais */
+* {
+/* *: aplica configurações a todos os elementos. */
+/* margin e padding: removem os espaçamentos padrões. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: facilita o controle das dimensões dos elementos. */
+}
+
+/* Cores principais do projeto */
+:root {
+/* :root: permite criar variáveis que podemos reutilizar no CSS. */
+    --marrom-escuro: #3b2418;
+    --marrom: #70452c;
+    --bege: #f5eee4;
+    --creme: #fffaf3;
+    --dourado: #c49a5a;
+}
+
+/* Configuração do corpo da página */
+body {
+    background-color: var(--bege);
+    color: var(--marrom-escuro);
+    font-family: Arial, sans-serif;
+    /* font-family: define a fonte utilizada no site. */
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    padding: 25px 8%;
+    background-color: var(--creme);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+    color: var(--marrom-escuro);
+    font-size: 26px;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+/* Links do menu */
+.menu a {
+    color: var(--marrom);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse nos links */
+.menu a {
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--dourado);
+}
+
+/* Banner principal */
+.banner {
+    width: 100%;
+    min-height: 500px;
+    padding: 80px 8%;
+
+    background-color: var(--marrom-escuro);
+
+    display: flex;
+    align-items: center;
+}
+
+/* Conteúdo do banner */
+.banner-conteudo {
+    max-width: 600px;
+}
+
+/* Título do banner */
+.banner-conteudo h2 {
+    color: var(--creme);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Texto do banner */
+.banner-conteudo p {
+    color: var(--bege);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Botão do banner */
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+
+    background-color: var(--dourado);
+    color: var(--marrom-escuro);
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+/* Efeito do botão */
+.botao:hover {
+    background-color: var(--creme);
+}
+
+/* Seção de destaques */
+.destaques {
+    padding: 80px 8%;
+    background-color: var(--creme);
+}
+
+/* Título da seção */
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+    color: var(--marrom-escuro);
+    margin-bottom: 15px;
+}
+
+.titulo-secao p {
+    font-size: 17px;
+    color: var(--marrom);
+}
+
+/* Container dos cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada card */
+.card {
+    background-color: var(--bege);
+    padding: 35px 25px;
+    border-radius: 10px;
+
+    flex: 1;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título dos cards */
+.card h3 {
+    color: var(--marrom-escuro);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Descrição dos cards */
+.card p {
+    color: var(--marrom);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Links dos cards */
+.card a {
+    color: var(--marrom);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    color: var(--dourado);
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--marrom-escuro);
+    color: var(--creme);
+    padding: 50px 8% 20px;
+}
+
+/* Conteúdo do rodapé */
+.footer-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Títulos do rodapé */
+.footer h2,
+.footer h3 {
+    margin-bottom: 15px;
+    color: var(--dourado);
+}
+
+/* Textos do rodapé */
+.footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--bege);
+}
+
+/* Parte final do rodapé */
+.footer-final {
+    border-top: 1px solid var(--marrom);
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Banner da página Sobre */
+.sobre-banner {
+    width: 100%;
+    min-height: 350px;
+    padding: 80px 8%;
+
+    background-color: var(--marrom);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Conteúdo do banner Sobre */
+.sobre-conteudo {
+    max-width: 800px;
+}
+
+/* Título do banner Sobre */
+.sobre-conteudo h2 {
+    color: var(--creme);
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+/* Texto do banner Sobre */
+.sobre-conteudo p {
+    color: var(--bege);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Seção de imagem da página Sobre */
+.sobre-imagem {
+    width: 100%;
+    min-height: 350px;
+    padding: 80px 8%;
+
+    background-color: var(--bege);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Conteúdo da seção de imagem */
+.sobre-imagem-conteudo {
+    max-width: 700px;
+}
+
+/* Título da seção */
+.sobre-imagem-conteudo h2 {
+    color: var(--marrom-escuro);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Texto da seção */
+.sobre-imagem-conteudo p {
+    color: var(--marrom);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Seção Missão, Visão e Valores */
+.missao-valores {
+    padding: 80px 8%;
+    background-color: var(--creme);
+}
+
+/* Imagem da página Sobre */
+.sobre-conteudo img {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+
+    object-fit: cover;
+
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Imagem da seção Do cultivo à sua xícara */
+.sobre-imagem-conteudo img {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+
+    object-fit: cover;
+
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Banner da página Produtos */
+.produtos-banner {
+    width: 100%;
+    min-height: 350px;
+    padding: 80px 8%;
+
+    background-color: var(--marrom);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Conteúdo do banner */
+.produtos-banner-conteudo {
+    max-width: 800px;
+}
+
+/* Título do banner */
+.produtos-banner-conteudo h2 {
+    color: var(--creme);
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+/* Texto do banner */
+.produtos-banner-conteudo p {
+    color: var(--bege);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Seção de produtos */
+.produtos {
+    padding: 80px 8%;
+    background-color: var(--creme);
+}
+
+/* Área dos filtros */
+.filtros-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* Botões de filtro */
+.filtro {
+    padding: 12px 25px;
+
+    background-color: var(--bege);
+    color: var(--marrom-escuro);
+
+    border: 1px solid var(--marrom);
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.filtro:hover {
+    background-color: var(--dourado);
+}
+
+/* Categoria selecionada */
+.filtro.ativo {
+    background-color: var(--marrom-escuro);
+    color: var(--creme);
+}
+
+/* Grade de produtos */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card individual de cada produto */
+.produto-card {
+    background-color: var(--bege);
+    padding: 30px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no card */
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Nome do produto */
+.produto-card h3 {
+    color: var(--marrom-escuro);
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* Descrição do produto */
+.produto-card p {
+    color: var(--marrom);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Preço do produto */
+.produto-card span {
+    color: var(--marrom-escuro);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Imagens dos produtos */
+.produto-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Responsividade da página de produtos */
+@media (max-width: 900px) {
+
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .produtos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-produtos {
+        flex-wrap: wrap;
+    }
+
+    /* Cabeçalho para celulares */
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    /* Logo para celulares */
+    .logo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Menu para celulares */
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+
+    /* Links do menu */
+    .menu a {
+        font-size: 14px;
+    }
+
+        /* Rodapé para celulares */
+    .footer-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* Áreas do rodapé */
+    .footer-logo,
+    .footer-contato,
+    .footer-redes {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Evita que textos longos ultrapassem a tela */
+    .footer p {
+        overflow-wrap: anywhere;
+    }
+
+    /* Parte final do rodapé */
+    .footer-final {
+        text-align: center;
+    }
+
+        /* Cards das páginas Início e Sobre */
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cada card ocupa toda a largura disponível */
+    .card {
+        width: 100%;
+        flex: none;
+    }
+}
+
+/* Página de contato */
+
+.contato {
+    padding: 80px 8%;
+    background-color: var(--creme);
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Formulário de contato */
+
+#form-contato {
+    flex: 1;
+    background-color: var(--bege);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Campos do formulário */
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.campo-formulario label {
+    color: var(--marrom-escuro);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--marrom);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.campo-formulario textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Efeito ao selecionar um campo */
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 5px rgba(196, 154, 90, 0.4);
+}
+
+/* Botão de envio */
+
+.botao-enviar {
+    padding: 15px 30px;
+    background-color: var(--marrom-escuro);
+    color: var(--creme);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: var(--dourado);
+    color: var(--marrom-escuro);
+}
+
+/* Informações de contato */
+
+.contato-informacoes {
+    flex: 1;
+    padding: 35px;
+    background-color: var(--bege);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contato-informacoes h3 {
+    color: var(--marrom-escuro);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contato-informacoes p {
+    color: var(--marrom);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Mensagens de validação */
+
+.erro {
+    color: #c0392b;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.mensagem-sucesso {
+    color: #267a3e;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsividade da página de contato */
+
+@media (max-width: 768px) {
+
+    .contato-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #form-contato,
+    .contato-informacoes {
+        width: 100%;
+    }
+
+    .contato {
+        padding: 50px 5%;
+    }
+
+}
+
+/* Banner da página de contato */
+
+.contato-banner {
+    width: 100%;
+    min-height: 350px;
+    padding: 80px 8%;
+    background-color: var(--marrom);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contato-banner-conteudo {
+    max-width: 800px;
+}
+
+.contato-banner-conteudo h2 {
+    color: var(--creme);
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.contato-banner-conteudo p {
+    color: var(--bege);
+    font-size: 18px;
+    line-height: 1.8;
+}

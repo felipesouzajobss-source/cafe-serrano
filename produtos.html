@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Café Aroma Serrano</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Café Aroma Serrano</h1>
+        </div>
+
+             <nav class="menu">
+            <!-- <div class="logo">: agrupa o nome da cafeteria. -->
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Fale Conosco</a>
+             </nav>
+
+    </header>
+
+    <main>
+
+        <section class="produtos-banner">
+
+            <div class="produtos-banner-conteudo">
+
+                <h2>Nossos Cafés Especiais</h2>
+
+                <p>
+                Descubra uma seleção de cafés especiais,
+                reparados para transformar cada xícara
+                em uma experiência única.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="produtos">
+
+            <div class="titulo-secao">
+
+                <h2>Conheça nossa seleção</h2>
+
+                    <p>
+                        Encontre o café perfeito para o seu momento.
+                    </p>
+
+            </div>
+
+            <div class="filtros-produtos">
+
+                <button class="filtro ativo" data-categoria="todos">
+                    Todos
+                </button>
+
+                <button class="filtro" data-categoria="graos">
+                    Café em Grãos
+                </button>
+
+                <button class="filtro" data-categoria="moido">
+                    Café Moído
+                </button>
+                
+            </div>
+
+            <div class="produtos-container">
+
+            <div class="produto-card" data-categoria="graos">
+                <img src="img/cafe-serra-dourada.jpg" alt="Grãos de café Serra Dourada">
+                <h3>Café Serra Dourada</h3>
+
+                    <p>
+                        Café especial em grãos, com notas de chocolate
+                        e baixa acidez.
+                    </p>
+
+                        <span>R$ 32,90</span>
+
+            </div>
+
+            <div class="produto-card" data-categoria="graos">
+                <img src="img/cafe-montanha-alta.jpg" alt="Grãos de café Montanha Alta">
+                <h3>Café Montanha Alta</h3>
+
+                    <p>
+                        Grãos selecionados, com aroma intenso
+                        e notas de caramelo.
+                    </p>
+
+                        <span>R$ 38,90</span>
+
+            </div>
+
+            <div class="produto-card" data-categoria="graos">
+                <img src="img/cafe-vale-verde.jpg" alt="Grãos de café Vale Verde">
+                <h3>Café Vale Verde</h3>
+
+                <p>
+                    Café em grãos com sabor equilibrado
+                    e notas frutadas.
+                </p>
+
+                    <span>R$ 35,90</span>
+
+            </div>
+
+            <div class="produto-card" data-categoria="moido">
+                <img src="img/cafe-aroma-classico.jpg" alt="Café Aroma Clássico moído">
+                <h3>Café Aroma Clássico</h3>
+
+                <p>
+                    Café moído tradicional, perfeito
+                    para o dia a dia.
+                </p>
+
+                    <span>R$ 24,90</span>
+
+            </div>
+
+            <div class="produto-card" data-categoria="moido">
+                <img src="img/cafe-doce-serrano.jpg" alt="Café Doce Serrano moído">
+                <h3>Café Doce Serrano</h3>
+
+                <p>
+                    Café moído com notas adocicadas
+                    e aroma marcante.
+                </p>
+
+                    <span>R$ 29,90</span>
+
+            </div>
+
+            <div class="produto-card" data-categoria="moido">
+             <img src="img/cafe-reserva-especial.jpg" alt="Café Reserva Especial moído">   
+            <h3>Café Reserva Especial</h3>
+
+                <p>
+                    Café moído especial, com sabor intenso
+                    e finalização prolongada.
+                </p>
+
+                    <span>R$ 34,90</span>
+
+            </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-conteudo">
+
+        <div class="footer-logo">
+            <h2>Café Aroma Serrano</h2>
+
+            <p>
+                Tradição, qualidade e paixão em cada xícara.
+            </p>
+        </div>
+
+        <div class="footer-contato">
+            <h3>Contato</h3>
+
+            <p>Telefone: (21) 99999-9999</p>
+            <p>E-mail: contato@cafearomaserrano.com.br</p>
+        </div>
+
+        <div class="footer-redes">
+            <h3>Redes sociais</h3>
+
+            <p>Instagram | Facebook</p>
+        </div>
+
+         </div>
+
+        <div class="footer-final">
+        <p>
+            © <span id="ano-atual"></span> Café Aroma Serrano.
+            Todos os direitos reservados.
+        </p>
+         </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

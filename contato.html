@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Café Aroma Serrano</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Café Aroma Serrano</h1>
+        </div>
+
+             <nav class="menu">
+            <!-- <div class="logo">: agrupa o nome da cafeteria. -->
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Fale Conosco</a>
+             </nav>
+
+    </header>
+
+    <main>
+        <section class="contato-banner">
+
+            <div class="contato-banner-conteudo">
+
+                <h2>Entre em Contato</h2>
+
+                    <p>
+                        Estamos aqui para ouvir você!
+                        Envie sua mensagem, tire suas dúvidas
+                        e conheça melhor o universo do Café Aroma Serrano.
+                    </p>
+
+            </div>
+
+        </section>
+
+        <section class="contato">
+
+            <div class="titulo-secao">
+
+                <h2>Fale Conosco</h2>
+
+                    <p>
+                        Preencha o formulário abaixo.
+                        Será um prazer atender você!
+                    </p>
+
+            </div>
+
+            <div class="contato-container">
+                <div class="contato-informacoes">
+
+                    <h3>Informações de Atendimento</h3>
+
+                    <p>
+                        <strong>Telefone:</strong><br>
+                        (21) 99999-9999
+                    </p>
+
+                    <p>
+                        <strong>E-mail:</strong><br>
+                        contato@cafearomaserrano.com.br
+                    </p>
+
+                    <p>
+                        <strong>Atendimento:</strong><br>
+                        Entre em contato conosco para tirar suas dúvidas.
+                    </p>
+
+                </div>
+                
+                <form id="form-contato">
+
+                    <div class="campo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome"
+                            placeholder="Digite seu nome">
+
+                        <small class="erro"></small>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Digite seu e-mail">
+
+                        <small class="erro"></small>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem"
+                            placeholder="Escreva sua mensagem"></textarea>
+
+                        <small class="erro"></small>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">
+                        Enviar mensagem
+                    </button>
+
+                    <p id="mensagem-sucesso"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+      
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-conteudo">
+
+        <div class="footer-logo">
+            <h2>Café Aroma Serrano</h2>
+
+            <p>
+                Tradição, qualidade e paixão em cada xícara.
+            </p>
+        </div>
+
+        <div class="footer-contato">
+            <h3>Contato</h3>
+
+            <p>Telefone: (21) 99999-9999</p>
+            <p>E-mail: contato@cafearomaserrano.com.br</p>
+        </div>
+
+        <div class="footer-redes">
+            <h3>Redes sociais</h3>
+
+            <p>Instagram | Facebook</p>
+        </div>
+
+         </div>
+
+        <div class="footer-final">
+        <p>
+            © <span id="ano-atual"></span> Café Aroma Serrano.
+            Todos os direitos reservados.
+        </p>
+         </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
